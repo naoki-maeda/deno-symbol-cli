@@ -1,0 +1,11 @@
+{
+  "fmt": {
+    "files": {
+      "exclude": ["README.md"]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 120
+    }
+  }
+}
