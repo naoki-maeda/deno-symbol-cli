@@ -20,7 +20,7 @@ import {
 
 new Command()
   .name("Deno Symbol Cli")
-  .version("0.1.1")
+  .version("0.1.2")
   .description("Symbol Cli tool with Deno")
   .default("help")
   .globalOption("-e, --endpoint [endpoint:string]", "Symbol API Endpoint", {
