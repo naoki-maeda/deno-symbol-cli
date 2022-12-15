@@ -9,7 +9,7 @@ Change the `--name` option to the name of the command you want to use.
 The `--unstable` option is required to use npm.
 
 ```sh
-deno install --force --name desy --allow-env --allow-read --allow-net --unstable https://deno.land/x/deno_symbol_cli@0.1.1/main.ts
+deno install --force --name desy --allow-env --allow-read --allow-net --unstable https://deno.land/x/deno_symbol_cli@0.1.2/main.ts
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ deno install --force --name desy --allow-env --allow-read --allow-net --unstable
 ```
 
   Usage:   Deno Symbol Cli
-  Version: 0.1.0          
+  Version: 0.1.2
 
   Description:
 
