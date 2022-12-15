@@ -5,6 +5,7 @@ Symbol Cli tool with Deno
 ## Install
 
 Change the `--name` option to the name of the command you want to use.
+
 The `--unstable` option is required to use npm.
 
 ```sh
