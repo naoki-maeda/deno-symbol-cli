@@ -1,6 +1,6 @@
 export { assert } from "https://deno.land/std@0.167.0/testing/asserts.ts";
 export { Command, HelpCommand, StringType } from "https://deno.land/x/cliffy@v0.25.5/mod.ts";
-export { Address, TransactionMapping } from "npm:symbol-sdk@^2.0.3";
+export { Address, PlainMessage, TransactionMapping } from "npm:symbol-sdk@^2.0.3";
 export {
   AccountRoutesApi,
   BlockRoutesApi,
