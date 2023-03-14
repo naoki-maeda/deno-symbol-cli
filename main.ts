@@ -11,6 +11,7 @@ import {
   ConfigurationParameters,
   HelpCommand,
   MosaicRoutesApi,
+  PlainMessage,
   StringType,
   TransactionGroupEnum,
   TransactionMapping,
@@ -63,6 +64,9 @@ new Command()
   // validate
   .command("validate <address:string>", "Check if valid address")
   .action((_, address) => validate(address))
+  // message
+  .command("message <message:string>", "Decode Plain Message from raw")
+  .action((_, rawMessage) => message(rawMessage))
   .parse(Deno.args);
 
 // Get Symbol API Configuration
@@ -163,4 +167,9 @@ const chain = async (endpoint: string) => {
 const validate = (address: string) => {
   const isValidAddress = Address.isValidRawAddress(String(address));
   print({ isValid: isValidAddress });
+};
+
+const message = (rawMessage: string) => {
+  const plainMessage = PlainMessage.createFromPayload(String(rawMessage));
+  print({ message: plainMessage.payload });
 };
