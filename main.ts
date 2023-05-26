@@ -21,7 +21,7 @@ import {
 
 new Command()
   .name("Deno Symbol Cli")
-  .version("0.1.3")
+  .version("0.1.4")
   .description("Symbol Cli tool with Deno")
   .default("help")
   .globalOption("-e, --endpoint [endpoint:string]", "Symbol API Endpoint", {
@@ -170,6 +170,6 @@ const validate = (address: string) => {
 };
 
 const message = (rawMessage: string) => {
-  const plainMessage = PlainMessage.createFromPayload(String(rawMessage));
+  const plainMessage = PlainMessage.create(String(rawMessage));
   print({ message: plainMessage.payload });
 };
