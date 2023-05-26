@@ -24,10 +24,13 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.31.1
+          deno-version: v1.34.0
 
       - name: Format
         run: deno fmt --check
 
       - name: Lint
         run: deno lint
+
+      - name: Compile
+        run: deno compile --allow-env --allow-read --allow-net --output desy main.ts
